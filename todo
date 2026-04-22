@@ -1,0 +1,18 @@
+- ajouter tranche au formulaire ok
+
+- Dynamiser les donnees (adaptee suivant le modele choisie) ok
+
+- ajouter un formulaire pour ajouter un modele de panneau
+avec ses configurations de pourcentage d'ensolleiment et de prix (il s'agit du prix en wh pour l'energie qu'on a pas utilise pas pendant 1h par exemple, la journee, qui varie suivant le jour de la semaine (weekend ou non weekend)) (pour comprendre ma conception regarde databasae/20262204-01-init.sql)
+
+- maintenant il faudrait que apres avoir ajouter les appareils dans appareil_form.py, au lieu de cliquer pour calculer les resultats, on est rediriger vers une page avec deux frame : 1 a gauche, pour choisir le modele un plusieur modeles, a droite pour afficher les resultats qu'on a obtenu a l'aide de la fonction getResult dans utils.py
+
+
+heure de pointe :
+
+majorer heure de pointe
+12 h _ 14 et 17  _ 19 : augmentation prix de courant
+
+exemple :
+
+miakatra 50 % en jour ouvrable

@@ -1,0 +1,46 @@
+on sait que la matinee de 6 a 17 : la puissance est a 40 %
+en plus de cela l'apres midi de 17 a 19 : la puissance restante est 50 % de 40 % ce qui equivaut  a la moitie. et le soir de 19 a 6 est 0 de maniere logique car il n'y a aucun soleil
+
+ce qui veut dire que pour charger la batterie qui est mesure en Wh la journee : comprennant la matinee et l'apres midi
+Ce qui donne suite a notre equation (17-6)x  + (19-17)y = Charge de la batterie
+on obtiens alors : 11x + 2y = Charge
+
+Or on sait que l'energie fourni y equivaut a x * 1/2
+ce qui donne 11x + x 
+Alors 12x = Charge donc l'energie a fournir :
+la matinee est Charge / 12
+l'apres_midi est Charge / 24
+
+Maintenant, on sait l'energie qui nous faudra pour charger la batterie a chaque heure
+pour le remplir
+
+Prennons en compte la puissance necessaire qu'il faudra que le Panneau Solaire pour 
+faire fonctionner les appariels a chaque heure (qui est une constante )
+On sait qu'on peut utiliser plusieurs appareils durant une meme heure
+Ce qui signifie qu'il faudra que le panneau solaire fournisse une energie qui puisse faire fonctionner n'importe quel nombre d'appareils n a n'importe quelle instant t
+Ce qui veut dire qu'on doit cherche le max de la somme des puissances des appareils utiliser dans un instant t
+
+(Charge/h  + Puissance Journee )  = x (1)
+(Charge/h*Beta + Puissance Aprem)  = x*Beta (2)
+
+(1) = 2 * (2)
+
+1 + 1/2 = 1 + 0.5
+
+12*Charge + Puissance Journee + Puissance Aprem = 3/2 * x
+
+ce qui donne alors la puissance qu'on fournira le Panneau Solaire
+
+maintenant, pour que nos donnees puisse permettre de repondre a nos criteres 
+on va les arranger par periodes (matin, aprem, soir):
+Pourquoi ?
+Nos donnees se presente de cette maniere :
+libelle 
+puissance
+tranche Heure : debut _ fin (En heure)
+
+Meme si le debut ou la fin se presente dans ce format : hh -- mm -- ss
+On prendra que hh, l'energie fourni par le panneau solaire est constant a chaque heure quelque soit les appareils utiliser. Pour ce qui est de la batterie, elle fourni de l'energi provennant directement de sa capacite de stockage ce qui signifie qu'elle diminue
+c'est pour ca qu'on ajoute une marge de securite + 50 % de son energie pour qu'elle ne soit pas a plat apres son utilisation : ce qui est une norme
+
+
