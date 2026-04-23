@@ -1,0 +1,9 @@
+libelle,puissance,debut,fin,tranche
+Réfrigérateur,500,06:00:00,22:00:00,1
+Lave-linge,2000,08:00:00,09:00:00,1
+Climatisation,3000,12:00:00,17:00:00,1
+Ordinateur,200,09:00:00,18:00:00,1
+Chauffe-eau,4000,06:00:00,07:00:00,1
+Micro-ondes,1200,12:30:00,13:00:00,1
+Télévision,150,19:00:00,23:00:00,2
+Éclairage,300,18:00:00,23:00:00,2

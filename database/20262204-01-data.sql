@@ -13,8 +13,8 @@ GO;
 
 INSERT INTO ConfigurationPanneauByTranche (id_tranche_heure, pourcentage_ensoleillement, modele_id)
 VALUES
-    (3, 50.0, 1), -- Alina pour Modele A
-    (3, 40.0, 2); -- Alina pour Modele B
+    (3, 50.0, 3), -- Alina pour Modele A
+    (3, 40.0, 3); -- Alina pour Modele B
     (3, 0, 3)
 GO
 
